@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Mehmet Emre Doğan</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+            
+    <body>
+        <div class="content">
+        <header><h1>Mehmet Emre Doğan</h1></header>
+
+        <button style="display: none;" onclick="topFunction()" id="scrollUpBtn" title="Go to top">&#8593;</button>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="projects.html"><i class="fa fa-gears"></i> Projects</a></li>
+                <li><a href="software.html"><i class="fa fa-code"></i> Software</a></li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+                
+                <li class="right"><a href="calculators.html"><i class="fa fa-calculator"></i> Calculators</a></li>
+                <li class="right"><a href="blog.html"><i class="fa fa-book"></i> Blog</a></li>
+            </ul>
+        </nav>
+        <br> <br>
+
+        <div class="container">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/pwmDriver.png" alt="ss"  class="thumbnailImage">
+                </figure>
+                
+                <a style="text-decoration: underline; color: white" href="https://github.com/Mehmet-Emre-Dogan/NE555_PWM_Driver"><h2>PWM Driver</h2></a>
+                <p>NE555 precision timer based IRFZ44N LED/motor driver circuit.</p>
+            </div>   
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/buckConverters.png" alt="ss"  class="thumbnailImage">
+                </figure>
+
+                <a style="text-decoration: underline; color: white" href="https://github.com/Mehmet-Emre-Dogan/buckConverters"><h2>Buck Converters</h2></a>
+                <p>Purpose: Regulate the input voltage to desired output voltage. <br>
+                    Definition: My PCB designs for Buck Converters.</p>
+            </div>   
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/smartHome.png" alt="ss"  class="thumbnailImage">
+                </figure>
+                
+                <a style="text-decoration: underline; color: white" href="https://github.com/Mehmet-Emre-Dogan/smartHome"><h2>Smart Home</h2></a>
+                <p>To control various home appliances from any smart device via the local network (LAN).</p>
+            </div>   
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/wirelessMusicVisualizer.gif" alt="ss"  class="thumbnailImage">
+                </figure>
+                
+                <a style="text-decoration: underline; color: white" href="https://github.com/Mehmet-Emre-Dogan/wirelessMusicVisualizer"><h2>Wireless Music Visualizer</h2></a>
+                <p>Measure the voltage level of the sound output of a device, i.e., computer, and send it to the receiver LED module via UDP protocol to visualize music.<br>
+                    <br>
+                    # Features:
+                    <br>
+                    - Ability to change the used wi-fi channel to keep away interference<br>
+                    - Capable of saving the current configuration to external I2C EEPROM to avoid adjusting the settings on each boot<br>
+                    - Different colors and visualizing modes<br>
+                    - Software restart mode for transmitter<br>
+                    - Very low latency (no noticeable lag even with listening to music with wired headphones)<br>
+                    <br>
+                    # Other Operating Modes:<br>
+                    - Flag colored flowing light<br>
+                    - Ambiance light changing color according to the seen video on the computer screen<br>
+                    - Emergency light (with different tones of white)<br>
+                </p>
+            </div>   
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/desktopClock.png" alt="ss"  class="thumbnailImage">
+                </figure>
+
+                <a style="text-decoration: underline; color: white" href="https://github.com/Mehmet-Emre-Dogan/smartDotMatrix"><h2>Smart Desk Clock</h2></a>
+                <p>ESP8266 powered 4x1 MAX72xx dot matrix device. With infrared remote control and web interface on LAN. Clock, temperature, humidity, and more…</p>
+            </div>   
+        </div>
+
+        <br> <br>
+        <div class="footer">
+            <p>© 2022</p>
+        </div>
+
+        <!-- Scroll to top code -->
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("scrollUpBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+                } else {
+                mybutton.style.display = "none";
+                }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Mehmet Emre Doğan</title>
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Add download icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        /* Style buttons */
+        .btn {
+        background-color: dodgerblue;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        /* Darker background on mouse-over */
+        .btn:hover {
+        background-color: black;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transform: scale(1.1);
+        } 
+        </style>
+    </head> 
+            
+    <body>
+        <div class="content">
+        <header><h1>Mehmet Emre Doğan</h1></header>
+        
+        <button style="display: none;" onclick="topFunction()" id="scrollUpBtn" title="Go to top">&#8593;</button>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="projects.html"><i class="fa fa-gears"></i> Projects</a></li>
+                <li><a href="software.html"><i class="fa fa-code"></i> Software</a></li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+                
+                <li class="right"><a href="calculators.html"><i class="fa fa-calculator"></i> Calculators</a></li>
+                <li class="right"><a href="blog.html"><i class="fa fa-book"></i> Blog</a></li>
+            </ul>
+        </nav>
+        <br> <br>
+
+        <div class="container" id="disclaimer">
+            <div class="box" style="background-color: rgb(156, 126, 126);">
+                <a style="text-decoration: none; color: white" href="#disclaimer"><h2 style="color: rgb(119, 0, 0); margin-top: 0; padding-left: 0; text-align: center;">DISCLAIMER</h2></a></a>
+
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/warning.png" alt="ss"  class="thumbnailImage2">
+                </figure>
+
+                <!-- &#10071;  -->
+                <p>Microsoft Defender (or some other antiviruses also) may say that file is malicious. You may read this <a style="text-decoration: underline; color: aquamarine;" href="https://stackoverflow.com/questions/65554464/why-is-my-pyinstaller-exe-file-marked-as-a-virus"> StackOverflow</a>  topic explaining why that happens.
+                     Moreover, you do not have to use the .exe file. Always you can compile your executable file from the source code (.py file) or run the .py file directly (if you have installed python interpreter and necessary libraries).
+                     You may download Python Interpreter from its official download <a style="text-decoration: underline; color: aquamarine;" href="https://www.python.org/downloads/"> page</a>. You may search Google to learn <a style="text-decoration: underline; color: aquamarine;" href="https://www.google.com/search?q=how+to+compile+python+file"> how</a> to compile a Python file.
+                     You may also watch <a style="text-decoration: underline; color: aquamarine;" href="https://www.youtube.com/watch?v=GgczVoCF-6Q"> this</a> video.</p>
+            </div>   
+        </div>
+
+        <div class="container" id="pdfize-Gui">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/pdfize.png" alt="ss"  class="thumbnailImage2">
+                </figure>
+
+                <a style="text-decoration: underline; color: white" href="#pdfize-Gui"><h2>PDF Maker (GUI; .exe, .py)</h2></a>
+                <p>Create a PDF document from image files</p>
+                <br>
+                <a href="https://github.com/Mehmet-Emre-Dogan/pdfize-Gui"><button class="btn"><i class="fa fa-github"></i> Code</button></a>&ensp;
+                <a href="https://github.com/Mehmet-Emre-Dogan/pdfize-Gui/releases"><button class="btn"><i class="fa fa-github"></i> Releases</button></a>
+            </div>   
+        </div>
+
+        <div class="container" id="infiniteWordleTr-Gui">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/wordle.png" alt="ss"  class="thumbnailImage2">
+                </figure>
+
+                <a style="text-decoration: underline; color: white" href="#infiniteWordleTr-Gui"><h2>Wordle Turkish Desktop (GUI; .exe, .py)</h2></a>
+                <p>Infinite Turkish Wordle game. However, by changing 'words.json', you may use it in any language.</p>
+                <br>
+                <a href="https://github.com/Mehmet-Emre-Dogan/infiniteWordleTr-Gui"><button class="btn"><i class="fa fa-github"></i> Code</button></a>&ensp;
+                <a href="https://github.com/Mehmet-Emre-Dogan/infiniteWordleTr-Gui/releases"><button class="btn"><i class="fa fa-github"></i> Releases</button></a>
+            </div>   
+        </div>
+
+        <div class="container" id="wordleTrFraud">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/wordlFraud.png" alt="ss"  class="thumbnailImage2">
+                </figure>
+
+                <a style="text-decoration: underline; color: white" href="#wordleTrFraud"><h2>Wordle Fraud (CLI; .exe, .py)</h2></a>
+                <p>Cheat app for wordleTr, but by changing 'words.json', you may use it in any language. </p>
+                <br>
+                <a href="https://github.com/Mehmet-Emre-Dogan/wordleTrFraud/"><button class="btn"><i class="fa fa-github"></i> Code</button></a>&ensp;
+                <a href="https://github.com/Mehmet-Emre-Dogan/wordleTrFraud/releases"><button class="btn"><i class="fa fa-github"></i> Releases</button></a>
+            </div>   
+        </div>
+
+        <div class="container" id="cgpaGuesser-Gui">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/cgpaGuesser.png" alt="ss"  class="thumbnailImage2">
+                </figure>
+
+                <a style="text-decoration: underline; color: white" href="#cgpaGuesser-Gui"><h2>CGPA Guesser (GUI; .exe, .py)</h2></a>
+                <p>Guess your prospective CGPA</p>
+                <br>
+                <a href="https://github.com/Mehmet-Emre-Dogan/cgpaGuesser-Gui"><button class="btn"><i class="fa fa-github"></i> Code</button></a>&ensp;
+                <a href="https://github.com/Mehmet-Emre-Dogan/cgpaGuesser-Gui/releases"><button class="btn"><i class="fa fa-github"></i> Releases</button></a>
+            </div>   
+        </div>
+
+        <div class="container" id="pdfMergeLite">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/pyFile.png" alt="ss"  class="thumbnailImage2">
+                </figure>
+
+                <a style="text-decoration: underline; color: white" href="#pdfMergeLite"><h2>PDF Merger (CLI; .py)</h2></a>
+                <p>Merge your PDF files</p>
+                <br>
+                <a href="https://github.com/Mehmet-Emre-Dogan/pdfMergeLite"><button class="btn"><i class="fa fa-github"></i> Code</button></a>&ensp;
+                <a href="https://github.com/Mehmet-Emre-Dogan/pdfMergeLite/releases"><button class="btn"><i class="fa fa-github"></i> Releases</button></a>
+            </div>   
+        </div>
+
+        <div class="container" id="pdfSplitter-Gui">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/pdfSplitter.png" alt="ss"  class="thumbnailImage2">
+                </figure>
+
+                <a style="text-decoration: underline; color: white" href="#pdfSplitter-Gui"><h2>PDF Splitter (GUI; .exe, .py)</h2></a>
+                <p>Split your PDF files with easy-to-use GUI</p>
+                <br>
+                <a href="https://github.com/Mehmet-Emre-Dogan/pdfSplitter-Gui/"><button class="btn"><i class="fa fa-github"></i> Code</button></a>&ensp;
+                <a href="https://github.com/Mehmet-Emre-Dogan/pdfSplitter-Gui/releases"><button class="btn"><i class="fa fa-github"></i> Releases</button></a>
+            </div>   
+        </div>
+
+        <div class="container" id="fileComparer">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/exeIcon.png" alt="ss"  class="thumbnailImage2">
+                </figure>
+
+                <a style="text-decoration: underline; color: white" href="#fileComparer"><h2>File Hash Comparer (GUI; .exe, .py)</h2></a>
+                <p>Compare and contrast duplicate files in your computer</p>
+                <br>
+                <a href="https://github.com/Mehmet-Emre-Dogan/fileComparer"><button class="btn"><i class="fa fa-github"></i> Code</button></a>&ensp;
+                <a href="https://github.com/Mehmet-Emre-Dogan/fileComparer/releases"><button class="btn"><i class="fa fa-github"></i> Releases</button></a>
+            </div>   
+        </div>
+
+        <div class="container" id="infiniteWordleTr">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/wordle.png" alt="ss"  class="thumbnailImage2">
+                </figure>
+
+                <a style="text-decoration: underline; color: white" href="#infiniteWordleTr"><h2>Wordle Terminal (CLI; .exe, .py)</h2></a>
+                <p>Infinite Turkish Wordle game on terminal. However, by changing 'words.json', you may use it in any language.</p>
+                <br>
+                <a href="https://github.com/Mehmet-Emre-Dogan/infiniteWordleTr"><button class="btn"><i class="fa fa-github"></i> Code</button></a>&ensp;
+                <a href="https://github.com/Mehmet-Emre-Dogan/infiniteWordleTr/releases"><button class="btn"><i class="fa fa-github"></i> Releases</button></a>
+            </div>   
+        </div>
+
+        <div class="container" id="splitPdf">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/pdfSplitter.png" alt="ss"  class="thumbnailImage2">
+                </figure>
+
+                <a style="text-decoration: underline; color: white" href="#splitPdf"><h2>PDF Splitter Terminal (CLI; .exe, .py)</h2></a>
+                <p>Split your PDF files</p>
+                <br>
+                <a href="https://github.com/Mehmet-Emre-Dogan/splitPdf"><button class="btn"><i class="fa fa-github"></i> Code</button></a>&ensp;
+                <a href="https://github.com/Mehmet-Emre-Dogan/splitPdf/releases"><button class="btn"><i class="fa fa-github"></i> Releases</button></a>
+            </div>   
+        </div>
+
+        <div class="container" id="desktopClock">
+            <div class="box">
+                <figure class="thumbnailFigure">
+                    <img  src="./pics/virtualDesktopClock.png" alt="ss"  class="thumbnailImage2">
+                </figure>
+
+                <a style="text-decoration: underline; color: white" href="#desktopClock"><h2>Virtual Clock (GUI; .exe, .py)</h2></a>
+                <p>Shows the system time with big font, nothing fancy</p>
+                <br>
+                <a href="https://github.com/Mehmet-Emre-Dogan/desktopClock"><button class="btn"><i class="fa fa-github"></i> Code</button></a>&ensp;
+                <a href="https://github.com/Mehmet-Emre-Dogan/desktopClock/releases"><button class="btn"><i class="fa fa-github"></i> Releases</button></a>
+            </div>   
+        </div>
+
+        <br> <br>
+        <div class="footer">
+            <p>© 2022</p>
+        </div>
+
+        <!-- Scroll to top code -->
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("scrollUpBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+                } else {
+                mybutton.style.display = "none";
+                }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+    </body>
+</html>

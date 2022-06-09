@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">    
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>Mehmet Emre Doğan</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+            
+    <body>
+        <div class="content">
+        <header><h1>Mehmet Emre Doğan</h1></header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="projects.html"><i class="fa fa-gears"></i> Projects</a></li>
+                <li><a href="software.html"><i class="fa fa-code"></i> Software</a></li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+                
+                <li class="right"><a href="calculators.html"><i class="fa fa-calculator"></i> Calculators</a></li>
+                <li class="right"><a href="blog.html"><i class="fa fa-book"></i> Blog</a></li>
+            </ul>
+        </nav>
+        <br> <br>
+
+        <div class="container">
+            <div class="box">
+                <h2>About Me</h2>
+                <p>I am a junior Electrical and Electronics Engineering student at METU. I am interested in power systems and power electronics area. Moreover, I love learning new programming languages and deepening my knowledge of the programming languages that I have already used. 
+                    I want to enhance my skills in power systems, power electronics, and software development about power area. Furthermore, I am interested in IoT systems and electric cars.</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="fixedFooter">
+            <p>© 2022</p>
+            <p id="visits"></p>
+            <script>
+                function cb(response) {
+                    var visitNum = response.value;
+                    document.getElementById('visits').innerText = "This page is visited " +  visitNum.toString() + " times since created."
+                }
+            </script>
+            <script async src="https://api.countapi.xyz/hit/medogan.com/visits?callback=cb"></script>
+        </div>
+
+    </body>
+
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Linear Interpolator</title>
+        <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <link rel="stylesheet" href="../../css/calculator.css">
+        <!-- Add download icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+            
+    <body>
+        <div class="content">
+        <header><h1>Mehmet Emre Doğan</h1></header>
+
+        <button style="display: none;" onclick="topFunction()" id="scrollUpBtn" title="Go to top">&#8593;</button>
+
+        <nav>
+            <ul>
+                <li><a href="../../index.html"><i class="fa fa-home"></i> Homepage</a></li>
+                <li><a href="../../calculators.html"><i class="fa fa-calculator"></i> Calculators Page</a></li>
+            </ul>
+        </nav>
+        <br> <br>
+
+        <header><h1>Linear Interpolator</h1></header>
+
+        <div class="container">
+            <div class="box">
+
+                <h2>Description</h2>
+  
+            </div>   
+        </div>
+
+        <div class="container">
+            <div class="box">
+
+                <h2>Console Output</h2>
+                <code> <p class="codeP" style="text-align: left;">
+                    <py-script>
+                        # https://stackoverflow.com/questions/12586601/remove-last-stdout-line-in-python
+                        CURSOR_UP_ONE = '\x1b[1A'
+                        ERASE_LINE = '\x1b[2K'
+
+                        class ExitInputException(Exception):
+                            """Raised when user wants to exit from an input loop"""
+
+                        def myInput(txt = ""):
+                            print(txt, end="\r")
+                            str = input()
+                            if str.lower() != 'exit':
+
+                                # print(CURSOR_UP_ONE + ERASE_LINE, end="\r")
+                                # print(txt + str)
+                                print(CURSOR_UP_ONE + txt + str)
+                                return str
+                            else:
+                                raise ExitInputException("Exited")
+
+                        def calculate(*args, **kwargs):
+                            print("#"*75)
+                            print("y = f(x), type 'exit' to exit.")
+                            xMin = float(myInput("x1--> " ))
+                            xKnown = float(myInput("xKnown--> " ))
+                            xMax = float(myInput("x2--> " ))
+                            yMin = float(myInput("y1--> " ))
+                            yMax = float(myInput("y2--> " ))
+
+                            deltax = xMax - xMin
+                            xDifference = xKnown - xMin
+                            ratio = xDifference/deltax
+
+                            deltay = yMax - yMin
+                            y = deltay*ratio + yMin
+                            print(f"==> y: {y}")
+
+                        calculate()
+                        # while True:
+                        #     try:
+                        #         calculate()
+                        #     except ExitInputException:
+                        #         break
+                        #     except Exception as ex:
+                        #         print(f"An error occured: {ex}")
+    
+                    </py-script>
+                </p></code>
+
+                <br>
+                <button id="new-task-btn" class="btn" type="submit" pys-onClick="calculate"><i class="fa fa-play"> <b style="font-family: Helvetica, sans-serif;">Re-run</b> </i> </button>
+
+            </div>   
+        </div>
+
+        <!-- Scroll to top code -->
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("scrollUpBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        
+<div class="footer">
+    <p>© 2022</p>
+</div>
+    </body>
+</html>

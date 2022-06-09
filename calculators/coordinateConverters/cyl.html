@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Coordinate Converters - Cyl Radian Input</title>
+        <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <link rel="stylesheet" href="../../css/calculator.css">
+        <!-- Add download icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+            
+    <body>
+        <div class="content">
+        <header><h1>Mehmet Emre Doğan</h1></header>
+
+        <button style="display: none;" onclick="topFunction()" id="scrollUpBtn" title="Go to top">&#8593;</button>
+
+        <nav>
+            <ul>
+                <li><a href="../../index.html"><i class="fa fa-home"></i> Homepage</a></li>
+                <li><a href="../../calculators.html"><i class="fa fa-calculator"></i> Calculators Page</a></li>
+
+                
+                
+                <li class="right"><a href="./main.html"><i class="fa fa-calculator"></i> Coor. Conv.</a></li> 
+                <li class="right"><a href="sph.html"><i class="fa fa-calculator"></i> Rθϕ (rad)</a></li>
+                <li class="right"><a href="cyl.html"><i class="fa fa-calculator"></i> rϕz (rad)</a></li>
+                <li class="right"><a href="sph_deg.html"><i class="fa fa-calculator"></i> Rθϕ (deg)</a></li>
+                <li class="right"><a href="cyl_deg.html"><i class="fa fa-calculator"></i> rϕz (deg)</a></li>
+                <li class="right"><a href="rectangular.html"><i class="fa fa-calculator"></i> xyz</a></li>           
+            </ul>
+        </nav>
+        <br> <br>
+
+        <header><h1>Coordinate Converters - Cyl Radian Input</h1></header>
+        
+
+        <div class="container">
+            <div class="box">
+
+                <h2>Description</h2>
+                <figure>
+                    <img  src="SS.png" alt="SS"  class="imagebox3">
+                    <br>
+                    <figcaption  class="imageAnnotation3">Figure 1: Explanation</figcaption>
+                </figure>
+                <br>
+            </div>   
+        </div>
+
+        <div class="container">
+            <div class="box">
+
+                <h2>Console Output</h2>
+                <code> <p class="codeP" style="text-align: left;">
+                    <py-script src="cyl.py"> </py-script>
+                </p></code>
+
+                <br>
+                <button id="new-task-btn" class="btn" type="submit" pys-onClick="calculate"><i class="fa fa-play"> <b style="font-family: Helvetica, sans-serif;">Re-run</b> </i> </button>   
+            </div>   
+        </div>
+
+        <!-- Scroll to top code -->
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("scrollUpBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        
+<div class="footer">
+    <p>© 2022</p>
+</div>
+    </body>
+</html>

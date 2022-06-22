@@ -16,7 +16,7 @@ body {
 }
 
 /* For desktop: */
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1200px) {
   .content {
     max-width: 60%;
     margin: auto;
@@ -47,13 +47,31 @@ body {
     font-size: large;
     
   }
-  /* For mobile phones: */
-  @media only screen and (max-width: 600px) {
-    ul li.right, 
-    ul li {float: none;}
+
+
+  #normalMenu{
+    display: block;
   }
   
-  /* Change the link color to #111 (black) on hover */
+  #hamburger{
+    display: none;
+  }
+
+  /* For mobile phones: */
+  @media only screen and (max-width: 727px) {
+    ul li.right, 
+    ul li {float: none;}
+
+    #normalMenu{
+      display: none;
+  }
+    #hamburger{
+      display: block;
+    }
+
+  }
+  
+  /* Change the link color to #111 (teal) on hover */
   li a:hover {
     background-color: teal;
     transition: all 0.1s ;
@@ -197,14 +215,13 @@ code{
   border: none;
   color: white;
   padding: 5px 10px;
+  margin: 4px 4px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
+  font-size: 14px;
   /* cursor: pointer; */
   border-radius: 16px;
-  font-size: 14px;
-
+  float: left;
 
   transition: 0.1s ease-in;
 }
@@ -217,10 +234,109 @@ code{
 
 .pillbox {
   padding: 5px 15px;
+  margin: auto;
   border-radius: 16px;
   width: 85%;
+  height: auto;
   background-color: rgb(100, 100, 100);
-  padding: auto;
-  margin: auto;
   
+  display:flow-root;
+  
+}
+
+/* Nav menu */
+.nav{
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  /* background-color: var(--black); */
+  overflow: hidden;
+  right: 5%;
+}
+
+menu{
+  display: flex;
+}
+
+.menu li{
+  width: auto;
+}
+
+.menu a{
+  display: block;
+  padding: 10px;
+  /* color: var(--white); */
+}
+
+.menu a:hover{
+  background-color: teal;
+}
+
+.nav{
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+
+
+/* Menu Icon */
+
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 25px 20px;
+  background-color: #86b300;
+}
+
+
+.hamb-line {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;  
+}
+
+.hamb-line::before,
+.hamb-line::after{
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .1s ease-out;
+  width: 100%;
+}
+
+.hamb-line::before{
+  top: 5px;
+}
+
+.hamb-line::after{
+  top: -5px;
+}
+
+
+.side-menu {
+  display: none;
+}
+
+/* Toggle menu icon */
+
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
 }

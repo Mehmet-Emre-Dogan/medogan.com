@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <head> 
+    <head>
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>MATLAB Demos</title>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,7 +12,26 @@
         <div class="content">
             <header><h1>Mehmet Emre Doğan</h1></header>
         
-            <nav>
+            <div id="hamburger">
+                <input class="side-menu" type="checkbox" id="side-menu"/>
+                <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+                <br> <br> 
+                
+                <nav class="nav">
+                    <br> <br>
+                    <ul class="menu">
+                        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="projects.html"><i class="fa fa-gears"></i> Projects</a></li>
+                        <li><a href="software.html"><i class="fa fa-code"></i> Software</a></li>
+                        <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+                        
+                        <li class="right"><a href="calculators.html"><i class="fa fa-calculator"></i> Calculators</a></li>
+                        <li class="right"><a href="blog.html"><i class="fa fa-book"></i> Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <nav id="normalMenu">
                 <ul>
                     <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="projects.html"><i class="fa fa-gears"></i> Projects</a></li>
@@ -38,6 +59,7 @@
                     <button class="pillButton">Polar phasor plotting</button>
                     <button class="pillButton">Rectangular to polar complex transformation</button>
                     <button class="pillButton">Phasor to time domain sinusoid conversion</button>
+                    <button class="pillButton">Double y-axis plot</button>
                 </div>
             </div>
             
@@ -52,6 +74,21 @@
                         <button class="pillButton">Rectangular to polar complex transformation</button>
                         <button class="pillButton">Complex rotation</button>
                     </div>
+            </div>   
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <a style="text-decoration: underline; color: white" href="blogs\2022\06\21\sm_synchronization.html"><h2>SM Synchronization to Grid</h2></a>
+                <p>Synchronous Machine and grid voltage waveforms.</p>
+                <br>
+                <div class="pillbox">
+                <button class="pillButton">Synchronous machine</button>
+                <button class="pillButton">Voltage waveforms</button>
+                <button class="pillButton">Sine signal generation with phase difference</button>
+                <button class="pillButton">x-y mode plot</button>
+                <!-- <button class="pillButton">Synchronization indicators</button> -->
+                </div>
             </div>   
         </div>
 

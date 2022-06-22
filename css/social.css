@@ -1,3 +1,6 @@
+/* REFERENCE */
+/* https://www.codehim.com/social-media/social-media-buttons-html-code/ */
+
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
 
 /* * {
@@ -24,7 +27,7 @@
   position: relative;
   background-color: #ffffff;
   border-radius: 50%;
-  margin: 10px 60px;
+  margin: 20px 60px;
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -79,6 +82,13 @@
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.wrapper .mail:hover,
+.wrapper .mail:hover .tooltip,
+.wrapper .mail:hover .tooltip::before {
+  background-color: #86b300;
+  color: #ffffff;
+}
+
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
@@ -102,5 +112,12 @@
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
   background-color: #de463b;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
   color: #ffffff;
 }

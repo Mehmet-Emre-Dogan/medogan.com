@@ -56,20 +56,6 @@ body {
   #hamburger{
     display: none;
   }
-
-  /* For mobile phones: */
-  @media only screen and (max-width: 727px) {
-    ul li.right, 
-    ul li {float: none;}
-
-    #normalMenu{
-      display: none;
-  }
-    #hamburger{
-      display: block;
-    }
-
-  }
   
   /* Change the link color to #111 (teal) on hover */
   li a:hover {
@@ -98,7 +84,23 @@ body {
   padding: 20px;
 }
 
+  /* For mobile phones: */
+  @media only screen and (max-width: 727px) {
+    ul li.right, 
+    ul li {float: none;}
 
+    #normalMenu{
+      display: none;
+  }
+    #hamburger{
+      display: block;
+    }
+  
+    .box{
+      width: 90%;
+    }
+
+  }
 
 .footer {
   left: 0;
@@ -252,6 +254,7 @@ code{
   /* background-color: var(--black); */
   overflow: hidden;
   right: 5%;
+  z-index: 2;
 }
 
 menu{

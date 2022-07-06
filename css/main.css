@@ -234,6 +234,28 @@ code{
   transition: 0.1s ease-in;
 }
 
+.pillButton2 {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin: 4px 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  /* cursor: pointer; */
+  border-radius: 16px;
+  float: none;
+
+  transition: 0.1s ease-in;
+}
+
+.pillButton2:hover {
+  background-color: greenyellow;
+  color: black;
+  transition: 0.1s ease-in;
+}
+
 .pillbox {
   padding: 5px 15px;
   margin: auto;
@@ -244,6 +266,15 @@ code{
   
   display:flow-root;
   
+}
+
+.pillbox2 {
+  padding: 5px 15px;
+  border-radius: 16px;
+  background-color: rgb(100, 100, 100);
+  
+  display: block;
+  float: right;  
 }
 
 /* Nav menu */
@@ -343,3 +374,45 @@ menu{
   transform: rotate(45deg);
   top:0;
 }
+
+  /* For mobile phones: */
+  @media only screen and (max-width: 727px) {
+    h2{
+      font-size: larger;
+      text-align: center;
+      margin-top: 10px;
+    }
+    h1{
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+      text-justify:newspaper;
+    }
+
+    .thumbnailImage{
+      display:block;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+
+    .thumbnailImage2 {
+      display:block;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;  
+    }
+
+    .pillbox2{
+      display: block;
+      float: none;  
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+    }
+  }

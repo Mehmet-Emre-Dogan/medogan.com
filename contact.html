@@ -55,20 +55,48 @@
                 <div class="tooltip">LinkedIn</div>
                 <span><i class="fab fa-linkedin"></i></span>
             </a>
-            </a>
+
             <a href="https://github.com/Mehmet-Emre-Dogan/" class="icon github">
                 <div class="tooltip">GitHub</div>
                 <span><i class="fab fa-github"></i></span>
             </a>
+
             <a href="https://www.youtube.com/channel/UC3mYPzM3kPDqNtzOg6xNR4Q" class="icon youtube">
                 <div class="tooltip">YouTube</div>
                 <span><i class="fab fa-youtube"></i></span>
             </a>
+
+            <button onclick="printMail()" style="display: contents;">
+            <a href="#email" class="icon mail">
+                <div class="tooltip">E-mail</div>
+                <span><i class="fa fa-envelope"></i></span>
+            </a> 
+            </button>
+
+            <!-- <button onclick="instaError()" style="display: contents;">
+            <a href="#noInstaError" class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+            </a>
+            </button> -->
+            
             </div>
             <!-- End Social Media Buttons HTML -->
         </div>
                  
     </div>
+
+    <script>
+        function printMail() {
+          prompt("Note that: if I had given you a card visit or a CV, please use the e-mail address given in that document.\nOtherwise, you may copy my public e-mail address below.", "contact.medogan@gmail.com");
+        }
+    </script>
+
+    <script>
+        function instaError() {
+        alert("I am not using Instagram.");
+        }
+    </script>
 
     <div class="fixedFooter">
         <p>© 2022</p>
